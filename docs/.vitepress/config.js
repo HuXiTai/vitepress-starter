@@ -70,7 +70,16 @@ module.exports = {
           { text: "H4C2", link: "/my_md/H4C2" },
           { text: "H5C3新增样式", link: "/my_md/H5C3新增样式" },
           { text: "JavaScript", link: "/my_md/JavaScript" },
-          { text: "jQuery+BootStrap+Less", link: "/my_md/jQueryBootStrapLess" },
+          {
+            text: "jQuery+BootStrap+Less",
+            items: [
+              { text: "jQuery", link: "/my_md/jQueryBootStrapLess/jQuery" },
+              { text: "Less", link: "/my_md/jQueryBootStrapLess/Less" },
+              { text: "工程化", link: "/my_md/jQueryBootStrapLess/工程化" },
+              { text: "ES5", link: "/my_md/jQueryBootStrapLess/ES5" },
+              { text: "ES6", link: "/my_md/jQueryBootStrapLess/ES6" },
+            ],
+          },
           { text: "nodeJS", link: "/my_md/nodeJS" },
           { text: "数据库", link: "/my_md/数据库" },
           { text: "AJAX", link: "/my_md/AJAX" },
@@ -91,7 +100,7 @@ module.exports = {
 
     //社交链接
     socialLinks: [
-      { icon: "github", link: "https://github.com/vuejs/vitepress" },
+      { icon: "github", link: "https://github.com/HuXiTai/My-Notes.git" },
       { icon: "twitter", link: "..." },
       // You can also add custom icons by passing SVG as string:
       {
