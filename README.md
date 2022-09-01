@@ -1,4 +1,5 @@
 ## 目录结构:
+```
 docs                
 ├─ .vitepress
 │  ├─ dist          //打包后的文件夹
@@ -16,3 +17,4 @@ docs
    ├─ index.md
    ├─ three.md
    └─ four.md
+```

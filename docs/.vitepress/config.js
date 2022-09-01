@@ -1,4 +1,30 @@
+// 图片放大预览效果
+import mdItCustomAttrs from "markdown-it-custom-attrs";
 module.exports = {
+  markdown: {
+    config: (md) => {
+      // use more markdown-it plugins!
+      md.use(mdItCustomAttrs, "image", {
+        "data-fancybox": "gallery",
+      });
+    },
+  },
+  // 引入图片灯箱js和css文件
+  head: [
+    [
+      "link",
+      {
+        rel: "stylesheet",
+        href: "https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css",
+      },
+    ],
+    [
+      "script",
+      {
+        src: "https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js",
+      },
+    ],
+  ],
   title: "我的文档", //标题
   description: "Just playing around.", //描述
   //ineNumbers: true, //代码块是否启用行号
