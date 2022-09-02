@@ -19,6 +19,13 @@ module.exports = {
       },
     ],
     [
+      "link",
+      {
+        rel: "icon",
+        href: "/icon/果冻.png",
+      },
+    ],
+    [
       "script",
       {
         src: "https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js",

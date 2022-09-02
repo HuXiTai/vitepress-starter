@@ -1,18 +1,17 @@
-/* ##### vertical-align:
->1：baseline:图片与文字基线对齐，默认的情况
->2：bottom:文字的底线和图片的底线对齐
->3：top:文字的顶线和图片的顶线对齐
->4：middle：图片的垂直中线和x-height的1/2处对齐
->特点：
->>1：当给盒子设置middle时会在x-height的1/2处对齐
->>2：行内块元素默认基线在底部，当设置内容时基线在最后一行文字基线处 */
+/* 
+>background-origin：决定background-position的初始位置
+>>border-box：从边框的左上角开始铺背景图片
+>>padding-box：从内边距的外边界开始铺背景图片
+>>content-box：从内容区的左上角开始铺背景图片
+*/
 
-img {
-  vertical-align: middle;
-}
-
-div {
-  height: 100px;
-  line-height: 100px;
-  font-size: 0;
+div{
+  background-origin: padding-box;
+  /* 
+    决定background-position的初始位置
+    值有：
+    border-box //从边框的左上角开始铺背景图片
+    padding-box //从内边距的外边界开始铺背景图片
+    content-box //从内容区的左上角开始铺背景图片
+  */
 }
